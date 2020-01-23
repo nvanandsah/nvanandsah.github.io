@@ -1,23 +1,558 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Navneet Anand Sah</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo3.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item"><a class="nav-link" href="#home">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#Project">Projects</a></li> 
+								<li class="nav-item"><a class="nav-link" href="Navneet_resume.pdf">resume</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area" id="home">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/navneet_1.jpeg" alt="Navneet Anand Sah">
+							</div>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6>Hello Everybody, I am</h6>
+									<h3>Navneet Anand Sah</h3>
+									<!--<h4>Hardware Enthusiast</h4>-->
+									<p>I am an ECE graduate from IIIT-Delhi. I have worked in the startup ecosystem on various technologies including AR/VR, Low power embedded sytems, Sensors and Digital Image and Signal processing. Currently I am working on hardware accelerators for AI, and Embedded circuits.  
+										I like building new stuff and work with other peoples. 
+										My main areas of interest are:
+										<ul>
+											<li>IoT devices & Edge Computing</li>
+											<li>Embedded Circuits</li>
+											<li>Neural networks and hardware deployment</li>
+											<li>Hardware accelerators</li>
+											
+										</ul>
+									</p>
+									<ul class="list basic_info">
+										<li><a href="mailto:navneetanandsah@gmail.com"><i class="lnr lnr-envelope"></i> navneetanandsah@gmail.com</a></li>
+										<li><a href="#"><i class="lnr lnr-home"></i> New Delhi, India</a></li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="https://www.facebook.com/navneet.anand.56"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.instagram.com/navneet.a.sah/"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/navneetanandsah/"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://github.com/nvanandsah"><i class="fa fa-github"></i></a></li>									
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+		
+		<section class="feature_area p_120" id="skills">
+				<div class="container">
+					<div class="main_title">
+						<h2>My SKills</h2>
+						<p> I have been working on</p>
+					</div>
+					<div class="feature_inner row">
+						<div class="col-lg-4 col-md-6">
+							<div class="feature_item">
+								<!--<i class="flaticon-city"></i>-->
+								<img src="img/graphics-card.png" width = "100" height="100" alt="GPU">
+								<h4>Hardware</h4>
+        								<p>Worked on
+											<ul>
+												<li>Energy Harvesting Systems</li>
+												<li>Edge Implementation</li>
+												<li>Microcontrollers and Sensors</li>
+												<li>GPU and FPGA Accelerators</li>	
+												<li>Battery Management Systems</li>
+											</ul>
+										</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="feature_item">
+								<!--<i class="flaticon-skyline"></i>-->
+								<img src="img/code.png" width = "100" height="100" alt="GPU" style="padding-bottom: 10px">
+								<h4>Tools</h4>
+        								<p>
+											<ul>
+												<li>Programming Languages - Python, JAVA, C++</li>										
+												<li>LabView, MATLAB, Ni-Daq</li>
+												<li>CAD/Simulation Softwares - Eagle, Inventor, LTSpice</li>
+												<li>Cloud - AWS, GCP, Azure</li>
+											</ul>
+										</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="feature_item">
+								<!--<i class="flaticon-sketch"></i>-->
+								<img src="img/machine-learning.png" width = "100" height="100" alt="GPU" style="padding-bottom: 1px">
+								<h4>Artificial Intelligence</h4>
+        								<p>Hardware accelerators for:
+											<ul>	
+												<li>Recurrent Neural Network - Decryption using LSTM implemented on CPU and FPGA</li>
+												<li>Convolution Neural Network - Implemented VGG16 and RESNET-50 on GPU using OpenCL</li>
+											</ul>
+										</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+        <!--================Welcome Area =================
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="feature_inner row">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="welcome_text">
+        					<h4>My skills</h4>
+							<p>I have been working on </p>
+						</div>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>Hardware</h4>
+        								<p>Worked on
+											<ul>
+												<li>Energy Harvesting </li>
+												<li>Edge Implementation</li>
+												<li>Microcontrollers and Sensors</li>
+												<li>GPU and FPGA Accelerators</li>	
+											</ul>
+										</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>Artificial Intelligence</h4>
+        								<p>Hardware accelerators for:
+											<ul>	
+												<li>Recurrent Neural Network</li>
+												<li>Convolution Neural Network</li>
+											</ul>
+										</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>Languages</h4>
+        								<p>
+											<ul>
+												<li>Python</li>											</li>
+												<li>MATLAB</li>
+												<li>JAVA</li>
+												<li>C++</li>
+											</ul>
+										</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================My Tabs Area =================-
+        <section class="mytabs_area p_120">
+        	<div class="container">
+        		<div class="tabs_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>March 2017 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>Colorlib</h4>
+											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>March 2017 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>Colorlib</h4>
+											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>March 2017 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>Colorlib</h4>
+											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>March 2017 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>Colorlib</h4>
+											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>March 2017 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>Colorlib</h4>
+											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>March 2017 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>Colorlib</h4>
+											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End My Tabs Area =================-->
+        
+        <!--================Feature Area =================-->
+        <section class="feature_area p_120" id="Project">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Projects</h2>
+        			<p> These are few of the projects that I have worked on</p>
+        		</div>
+        		<div class="feature_inner row">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<!--<i class="flaticon-city"></i>-->
+							<img src="img/graphics-card.png" width = "100" height="100" alt="GPU">
+							<h4>Hardware acceleration of Neural Networks</h4>
+        					<p>Using OpenCL framework we built a CNN(Convolutional Neural Network) and RNN(Recurrent Neural Network) to run on heterogenous environments such as CPUs, GPUs and FPGAs.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+							<!--<i class="flaticon-skyline"></i>-->
+							<img src="img/clean-energy.png" width = "100" height="100" alt="GPU" style="padding-bottom: 10px">
+        					<h4>Energy Harvesting using thermal enegry</h4>
+        					<p>Designed a Energy harvesting prototype that uses TEG(Thermo-Electric Generator) to convert the temperature gradient across two surfaces, this harvested energy was then use to power a microcontroller that sends data using BLE.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<!--<i class="flaticon-sketch"></i>-->
+							<img src="img/drone.png" width = "100" height="100" alt="GPU" style="padding-bottom: 1px">
+        					
+							<h4>Human recognition using Drones</h4>
+        					<p>Made a Yolo v3 based human recognition system that can detect human motion in an area using a camera and raspberry pi that were mounted on a drones. This has various applications in surveillance and crowd management.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Feature Area =================-->
+        
+        <!--================Home Gallery Area =================-
+        <section class="home_gallery_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Our Latest Featured Projects</h2>
+        			<p>Who are in extremely love with eco friendly system.</p>
+        		</div>
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".brand"><a href="#">Vector</a></li>
+						<li data-filter=".manipul"><a href="#">Raster</a></li>
+						<li data-filter=".creative"><a href="#">UI/UX</a></li>
+						<li data-filter=".design"><a href="#">Printing</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="gallery_f_inner row imageGallery1">
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
+        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Helmet Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
+        						<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>2D Vinyl Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
+        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Creative Poster Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
+        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Embosed Logo Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
+        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Disposable Bottle</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
+        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Logo Design</h4>
+        						<p>Client Project</p>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="more_btn">
+        			<a class="main_btn" href="#">Load More Items</a>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Home Gallery Area =================-->
+        
+        <!--================Testimonials Area =================-
+        <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Testimonials</h2>
+        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+        		</div>
+        		<div class="testi_inner">
+					<div class="testi_slider owl-carousel">
+						<div class="item">
+							<div class="testi_item">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+								<h4>Fanny Spencer</h4>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star-half-o"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testi_item">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+								<h4>Fanny Spencer</h4>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star-half-o"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testi_item">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+								<h4>Fanny Spencer</h4>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star-half-o"></i></a>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>I am an ECE graduate from IIIT-Delhi. I have worked in the startup ecosystem on various technologies including AR/VR, Low power embedded sytems, Sensors and Digital Image and Signal processing. Currently I am working on hardware accelerators for AI, and Embedded circuits. I like building new stuff and work with other peoples.</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by Navneet Anand Sah
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+								<h3>Contact me</h3>
+								<li><a href="mailto:navneetanandsah@gmail.com"><i class="lnr lnr-envelope"></i> navneetanandsah@gmail.com</a></li>
+										
+        					</div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+									<li><a href="https://www.facebook.com/navneet.anand.56"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.instagram.com/navneet.a.sah/"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/navneetanandsah/"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="https://github.com/nvanandsah"><i class="fa fa-github"></i></a></li>	
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
