@@ -1,0 +1,130 @@
+# Navneet Anand Sah - Portfolio Website
+
+A professional portfolio website showcasing product leadership experience, patents, publications, and technical projects in clean energy and SaaS.
+
+## 🌟 Features
+
+- **Responsive Design**: Custom breakpoint at 400px with split-screen layout (30/70) on larger screens
+- **Dark Mode**: Built-in theme toggle with smooth transitions
+- **Interactive Sections**:
+  - Hero section with professional summary
+  - Experience timeline with multiple roles
+  - Education and certifications
+  - Patents with external links to Google Patents
+  - Skills and tech stack with brand logos
+  - Projects with GitHub links
+  - IEEE publications
+  - Contact information
+- **CV Download**: One-click resume download functionality
+- **Modern Tech Stack**: React + TypeScript + Tailwind CSS + shadcn/ui
+
+## 🚀 Live Demo
+
+Visit the live portfolio: [https://nvanandsah.github.io/portfolio](https://nvanandsah.github.io/portfolio)
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Icons**: Lucide React, React Icons
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js 18+ and npm
+
+### Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/nvanandsah/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5000](http://localhost:5000) in your browser
+
+## 🏗️ Build for Production
+
+Generate static files for deployment:
+
+```bash
+npm run build
+```
+
+The static files will be generated in the `dist` directory.
+
+## 🚀 Deploy to GitHub Pages
+
+### Automatic Deployment
+
+1. Push your code to GitHub:
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+2. The GitHub Actions workflow will automatically build and deploy to GitHub Pages
+
+### Manual Deployment
+
+```bash
+npm run build
+npm run deploy
+```
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── client/                 # Frontend application
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── pages/         # Page components
+│   │   ├── lib/           # Utilities
+│   │   └── App.tsx        # Root component
+│   └── index.html         # HTML entry point
+├── attached_assets/       # Static assets (images, logos)
+├── public/                # Public assets
+└── README.md             # This file
+```
+
+## 🎨 Design
+
+The portfolio design is inspired by modern, minimalist portfolio websites with:
+- Clean typography using Inter font family
+- Green accent color (#4ade80)
+- Dark theme optimized for readability
+- Smooth animations and transitions
+- Mobile-first responsive approach
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Navneet Anand Sah**
+- LinkedIn: [navneetanandsah](https://www.linkedin.com/in/navneetanandsah/)
+- GitHub: [@nvanandsah](https://github.com/nvanandsah)
+- Email: navneetanandsah@gmail.com
+
+## 🤝 Contributing
+
+This is a personal portfolio website, but suggestions and feedback are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+Built with ❤️ using React and Tailwind CSS
