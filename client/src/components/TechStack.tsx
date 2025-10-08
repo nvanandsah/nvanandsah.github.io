@@ -37,7 +37,7 @@ export default function TechStack({ technologies }: TechStackProps) {
                 className="flex flex-col items-center gap-2 p-3 xs:p-4 rounded-xl bg-card border border-card-border hover-elevate"
                 data-testid={`card-tech-${idx}`}
               >
-                {Icon && <Icon className="w-8 h-8 xs:w-10 xs:h-10 text-primary" />}
+                {Icon && <Icon className="w-8 h-8 xs:w-10 xs:h-10" />}
                 <span className="text-xs font-medium text-center" data-testid={`text-tech-name-${idx}`}>
                   {tech.name}
                 </span>
