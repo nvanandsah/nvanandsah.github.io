@@ -87,7 +87,12 @@ git commit -m "Add portfolio website"
 git push origin main
 ```
 
-3. The GitHub Actions workflow will automatically build and deploy
+3. The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically:
+   - Install dependencies
+   - Build the static site using `vite.config.static.ts`
+   - Deploy to GitHub Pages
+
+Your site will be available at `https://[username].github.io/[repository-name]/`
 
 ### Method 2: Manual Deployment
 
