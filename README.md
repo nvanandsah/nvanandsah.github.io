@@ -76,23 +76,35 @@ The static files will be generated in the `dist` directory.
 
 ### Method 1: Automatic Deployment with GitHub Actions (Recommended)
 
-1. Enable GitHub Pages in your repository:
-   - Go to Settings → Pages
-   - Source: "GitHub Actions"
+1. **IMPORTANT: Configure GitHub Pages Settings**
+   - Go to your repository on GitHub
+   - Navigate to **Settings → Pages**
+   - Under "Build and deployment":
+     - **Source**: Select "GitHub Actions" (NOT "Deploy from a branch")
+   - Save the settings
 
-2. Push your code to GitHub:
+2. **Update the base path** (if needed):
+   - If your repository is named `portfolio`, the current config is correct (`base: '/portfolio/'`)
+   - If your repository is `username.github.io`, change `base: '/portfolio/'` to `base: '/'` in `vite.config.static.ts`
+
+3. Push your code to GitHub:
 ```bash
 git add .
 git commit -m "Add portfolio website"
 git push origin main
 ```
 
-3. The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically:
+4. The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically:
    - Install dependencies
    - Build the static site using `vite.config.static.ts`
    - Deploy to GitHub Pages
 
 Your site will be available at `https://[username].github.io/[repository-name]/`
+
+**Troubleshooting:**
+- If you see the README instead of your portfolio, ensure GitHub Pages Source is set to "GitHub Actions", NOT "Deploy from a branch"
+- Check the Actions tab for deployment status
+- Wait a few minutes after deployment completes for changes to appear
 
 ### Method 2: Manual Deployment
 

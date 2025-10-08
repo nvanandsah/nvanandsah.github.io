@@ -17,5 +17,6 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
-  base: './',
+  // Use '/portfolio/' if your repo is named 'portfolio', or '/' if it's username.github.io
+  base: '/portfolio/',
 });
