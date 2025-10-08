@@ -160,9 +160,8 @@ export default function Home() {
   ];
 
   const handleDownloadCV = () => {
-    console.log("Download CV clicked");
-    // In a real app, this would trigger a CV download
-    alert("CV download would start here");
+    // Trigger the CV download
+    window.location.href = '/api/download-cv';
   };
 
   return (
