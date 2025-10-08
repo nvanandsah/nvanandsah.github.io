@@ -25,24 +25,25 @@ export default function Hero({
   onDownloadCV
 }: HeroProps) {
   return (
-    <section className="py-8 xs:py-6 w-full">
+    <section className="py-8 xs:py-6 w-full" itemScope itemType="https://schema.org/Person">
       <div className="px-4 xs:px-6">
         <div className="flex flex-col gap-6 items-center text-center">
           <div className="flex-shrink-0">
             <img
               src={profileImage}
-              alt={name}
+              alt={`${name} - Professional Photo`}
               className="w-24 h-24 xs:w-28 xs:h-28 rounded-full object-cover ring-2 ring-primary/20"
               data-testid="img-profile"
+              itemProp="image"
             />
           </div>
           
           <div className="space-y-4 w-full">
             <div>
-              <h1 className="text-2xl xs:text-3xl font-bold mb-2" data-testid="text-name">
+              <h1 className="text-2xl xs:text-3xl font-bold mb-2" data-testid="text-name" itemProp="name">
                 {name}
               </h1>
-              <p className="text-sm xs:text-base font-medium text-muted-foreground mb-3" data-testid="text-title">
+              <p className="text-sm xs:text-base font-medium text-muted-foreground mb-3" data-testid="text-title" itemProp="jobTitle">
                 {title}
               </p>
               <div className="flex items-center gap-2 justify-center">
@@ -52,20 +53,20 @@ export default function Hero({
             </div>
 
             <div className="flex flex-col gap-2 text-xs text-muted-foreground">
-              <div className="flex items-center gap-2 justify-center" data-testid="text-location">
+              <div className="flex items-center gap-2 justify-center" data-testid="text-location" itemProp="address">
                 <MapPin className="w-3 h-3" />
                 <span className="text-xs">{location}</span>
               </div>
               <div className="flex items-center gap-2 justify-center" data-testid="text-email">
                 <Mail className="w-3 h-3" />
-                <a href={`mailto:${email}`} className="hover:text-foreground transition-colors text-xs truncate max-w-full">
+                <a href={`mailto:${email}`} className="hover:text-foreground transition-colors text-xs truncate max-w-full" itemProp="email">
                   {email}
                 </a>
               </div>
               {phone && (
                 <div className="flex items-center gap-2 justify-center" data-testid="text-phone">
                   <Phone className="w-3 h-3" />
-                  <a href={`tel:${phone}`} className="hover:text-foreground transition-colors text-xs">
+                  <a href={`tel:${phone}`} className="hover:text-foreground transition-colors text-xs" itemProp="telephone">
                     {phone}
                   </a>
                 </div>
@@ -77,6 +78,7 @@ export default function Hero({
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors text-xs"
+                  itemProp="sameAs"
                 >
                   LinkedIn
                 </a>
