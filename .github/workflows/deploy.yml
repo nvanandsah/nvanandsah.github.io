@@ -34,8 +34,11 @@ jobs:
       - name: Build
         run: npx vite build --config vite.config.static.ts
 
-      - name: Copy .nojekyll
-        run: cp public/.nojekyll dist/
+      - name: Copy SEO files
+        run: |
+          cp public/.nojekyll dist/
+          cp public/robots.txt dist/
+          cp public/sitemap.xml dist/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
