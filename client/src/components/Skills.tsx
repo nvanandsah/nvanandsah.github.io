@@ -12,20 +12,20 @@ interface SkillsProps {
 
 export default function Skills({ skillCategories }: SkillsProps) {
   return (
-    <section className="py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8" data-testid="text-skills-heading">
+    <section className="py-8 xs:py-10">
+      <div className="px-4 xs:px-6 max-w-5xl mx-auto">
+        <h2 className="text-2xl xs:text-3xl font-bold mb-4 xs:mb-6" data-testid="text-skills-heading">
           Skills
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-4">
           {skillCategories.map((cat, idx) => (
-            <Card key={idx} className="p-6 md:p-8" data-testid={`card-skill-category-${idx}`}>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-primary mb-4" data-testid={`text-skill-category-${idx}`}>
+            <Card key={idx} className="p-4 xs:p-6" data-testid={`card-skill-category-${idx}`}>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-primary mb-3" data-testid={`text-skill-category-${idx}`}>
                 {cat.category}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill, skillIdx) => (
-                  <Badge key={skillIdx} variant="secondary" data-testid={`badge-skill-${idx}-${skillIdx}`}>
+                  <Badge key={skillIdx} variant="secondary" className="text-xs" data-testid={`badge-skill-${idx}-${skillIdx}`}>
                     {skill}
                   </Badge>
                 ))}

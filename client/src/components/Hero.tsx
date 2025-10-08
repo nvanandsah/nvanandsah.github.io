@@ -25,58 +25,58 @@ export default function Hero({
   onDownloadCV
 }: HeroProps) {
   return (
-    <section className="py-16 md:py-24">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start">
+    <section className="py-8 xs:py-6 w-full">
+      <div className="px-4 xs:px-6">
+        <div className="flex flex-col gap-6 items-center text-center">
           <div className="flex-shrink-0">
             <img
               src={profileImage}
               alt={name}
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-2 ring-primary/20"
+              className="w-24 h-24 xs:w-28 xs:h-28 rounded-full object-cover ring-2 ring-primary/20"
               data-testid="img-profile"
             />
           </div>
           
-          <div className="flex-1 text-center md:text-left space-y-6">
+          <div className="space-y-4 w-full">
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3" data-testid="text-name">
+              <h1 className="text-2xl xs:text-3xl font-bold mb-2" data-testid="text-name">
                 {name}
               </h1>
-              <p className="text-xl md:text-2xl font-medium text-muted-foreground mb-4" data-testid="text-title">
+              <p className="text-sm xs:text-base font-medium text-muted-foreground mb-3" data-testid="text-title">
                 {title}
               </p>
-              <div className="flex items-center gap-2 justify-center md:justify-start">
+              <div className="flex items-center gap-2 justify-center">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
-                <span className="text-sm text-muted-foreground" data-testid="text-status">{status}</span>
+                <span className="text-xs text-muted-foreground" data-testid="text-status">{status}</span>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 text-sm text-muted-foreground flex-wrap justify-center md:justify-start">
-              <div className="flex items-center gap-2" data-testid="text-location">
-                <MapPin className="w-4 h-4" />
-                <span>{location}</span>
+            <div className="flex flex-col gap-2 text-xs text-muted-foreground">
+              <div className="flex items-center gap-2 justify-center" data-testid="text-location">
+                <MapPin className="w-3 h-3" />
+                <span className="text-xs">{location}</span>
               </div>
-              <div className="flex items-center gap-2" data-testid="text-email">
-                <Mail className="w-4 h-4" />
-                <a href={`mailto:${email}`} className="hover:text-foreground transition-colors">
+              <div className="flex items-center gap-2 justify-center" data-testid="text-email">
+                <Mail className="w-3 h-3" />
+                <a href={`mailto:${email}`} className="hover:text-foreground transition-colors text-xs truncate max-w-full">
                   {email}
                 </a>
               </div>
               {phone && (
-                <div className="flex items-center gap-2" data-testid="text-phone">
-                  <Phone className="w-4 h-4" />
-                  <a href={`tel:${phone}`} className="hover:text-foreground transition-colors">
+                <div className="flex items-center gap-2 justify-center" data-testid="text-phone">
+                  <Phone className="w-3 h-3" />
+                  <a href={`tel:${phone}`} className="hover:text-foreground transition-colors text-xs">
                     {phone}
                   </a>
                 </div>
               )}
-              <div className="flex items-center gap-2" data-testid="link-linkedin">
-                <Linkedin className="w-4 h-4" />
+              <div className="flex items-center gap-2 justify-center" data-testid="link-linkedin">
+                <Linkedin className="w-3 h-3" />
                 <a 
                   href={linkedin} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-foreground transition-colors text-xs"
                 >
                   LinkedIn
                 </a>
@@ -86,7 +86,8 @@ export default function Hero({
             <div>
               <Button 
                 onClick={onDownloadCV}
-                className="w-full sm:w-auto"
+                className="w-full"
+                size="sm"
                 data-testid="button-download-cv"
               >
                 Download CV
