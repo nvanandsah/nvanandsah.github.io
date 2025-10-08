@@ -80,12 +80,14 @@ export default function Home() {
     {
       title: "System and Method for Irradiance Estimation on Solar Panels",
       organization: "WIPO",
-      date: "Jun 2023"
+      date: "Jun 2023",
+      link: "https://patents.google.com/patent/WO2023111934A1/en?inventor=navneet+anand+sah&oq=inventor:(navneet+anand+sah)"
     },
     {
       title: "System and Method for Pitched Roof Design Automation",
       organization: "WIPO",
-      date: "Jun 2023"
+      date: "Jun 2023",
+      link: "https://patents.google.com/patent/WO2023111936A1/en?inventor=navneet+anand+sah&oq=inventor:(navneet+anand+sah)"
     }
   ];
 
@@ -142,7 +144,8 @@ export default function Home() {
   const projects = [
     {
       title: "Neural Network Visualizer Web App",
-      description: "Flask / Keras / Streamlit application that visualizes neural network prediction flows, making complex ML models more interpretable."
+      description: "Flask / Keras / Streamlit application that visualizes neural network prediction flows, making complex ML models more interpretable.",
+      link: "https://github.com/nvanandsah/Neural-Network-Visualizer-Web-App"
     },
     {
       title: "Human & Weapon Detection System (YOLOv3)",
@@ -154,7 +157,8 @@ export default function Home() {
     {
       title: "Experimental Results for Energy Harvesting Using TEG",
       publisher: "IEEE ICC Workshop 2020",
-      date: "2020"
+      date: "2020",
+      link: "https://ieeexplore.ieee.org/abstract/document/9145405/"
     }
   ];
 

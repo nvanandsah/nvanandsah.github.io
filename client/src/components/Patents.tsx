@@ -1,10 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLink } from "lucide-react";
 
 interface Patent {
   title: string;
   organization: string;
   date: string;
+  link?: string;
 }
 
 interface PatentsProps {
@@ -24,7 +26,19 @@ export default function Patents({ patents }: PatentsProps) {
               <div className="space-y-2">
                 <div className="flex flex-wrap items-start gap-2">
                   <h3 className="font-bold text-sm xs:text-base flex-1" data-testid={`text-patent-title-${idx}`}>
-                    {patent.title}
+                    {patent.link ? (
+                      <a 
+                        href={patent.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors inline-flex items-center gap-2"
+                      >
+                        {patent.title}
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    ) : (
+                      patent.title
+                    )}
                   </h3>
                   <Badge variant="outline" className="text-xs" data-testid={`badge-patent-org-${idx}`}>
                     {patent.organization}
