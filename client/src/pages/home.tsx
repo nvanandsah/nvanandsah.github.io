@@ -171,44 +171,95 @@ export default function Home() {
         <ThemeToggle />
       </div>
 
-      <Hero
-        name="Navneet Anand Sah"
-        title="Chief Product Officer | Head of Product | SaaS & Clean Energy Specialist"
-        status="Open to work"
-        location="Remote | CA, US | Blr, India"
-        email="navneetanandsah@gmail.com"
-        linkedin="https://www.linkedin.com/in/navneetanandsah/"
-        profileImage={profileImage}
-        onDownloadCV={handleDownloadCV}
-      />
+      {/* Mobile layout - stacked */}
+      <div className="block xs:hidden">
+        <Hero
+          name="Navneet Anand Sah"
+          title="Chief Product Officer | Head of Product | SaaS & Clean Energy Specialist"
+          status="Open to work"
+          location="Remote | CA, US | Blr, India"
+          email="navneetanandsah@gmail.com"
+          linkedin="https://www.linkedin.com/in/navneetanandsah/"
+          profileImage={profileImage}
+          onDownloadCV={handleDownloadCV}
+        />
 
-      <About
-        summary="Executive product leader with a proven track record scaling SaaS products from concept to $1M+ ARR across India, US, and global markets. Experienced in leading cross-functional teams, defining product strategy, and executing GTM plans for energy and SaaS platforms. Background in software engineering and R&D with multiple patents in clean-tech. Adept at bridging technology, business, and user experience to deliver measurable results and market leadership."
-      />
+        <About
+          summary="Executive product leader with a proven track record scaling SaaS products from concept to $1M+ ARR across India, US, and global markets. Experienced in leading cross-functional teams, defining product strategy, and executing GTM plans for energy and SaaS platforms. Background in software engineering and R&D with multiple patents in clean-tech. Adept at bridging technology, business, and user experience to deliver measurable results and market leadership."
+        />
 
-      <Experience experiences={experiences} />
+        <Experience experiences={experiences} />
 
-      <Education education={education} />
+        <Education education={education} />
 
-      <Certifications certifications={certifications} />
+        <Certifications certifications={certifications} />
 
-      <Patents patents={patents} />
+        <Patents patents={patents} />
 
-      <Skills skillCategories={skillCategories} />
+        <Skills skillCategories={skillCategories} />
 
-      <TechStack technologies={technologies} />
+        <TechStack technologies={technologies} />
 
-      <Projects projects={projects} />
+        <Projects projects={projects} />
 
-      <Publications publications={publications} />
+        <Publications publications={publications} />
 
-      <Contact email="navneetanandsah@gmail.com" />
+        <Contact email="navneetanandsah@gmail.com" />
 
-      <footer className="py-8 text-center text-sm text-muted-foreground border-t">
-        <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <p>© {new Date().getFullYear()} Navneet Anand Sah. All rights reserved.</p>
+        <footer className="py-8 text-center text-sm text-muted-foreground border-t">
+          <div className="max-w-6xl mx-auto px-6 md:px-8">
+            <p>© {new Date().getFullYear()} Navneet Anand Sah. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+
+      {/* Desktop layout - 30/70 split with fixed left */}
+      <div className="hidden xs:flex h-screen">
+        {/* Left column - Fixed Hero (30%) */}
+        <div className="w-[30%] h-screen overflow-hidden flex items-center border-r">
+          <Hero
+            name="Navneet Anand Sah"
+            title="Chief Product Officer | Head of Product | SaaS & Clean Energy Specialist"
+            status="Open to work"
+            location="Remote | CA, US | Blr, India"
+            email="navneetanandsah@gmail.com"
+            linkedin="https://www.linkedin.com/in/navneetanandsah/"
+            profileImage={profileImage}
+            onDownloadCV={handleDownloadCV}
+          />
         </div>
-      </footer>
+
+        {/* Right column - Scrollable content (70%) */}
+        <div className="w-[70%] h-screen overflow-y-auto">
+          <About
+            summary="Executive product leader with a proven track record scaling SaaS products from concept to $1M+ ARR across India, US, and global markets. Experienced in leading cross-functional teams, defining product strategy, and executing GTM plans for energy and SaaS platforms. Background in software engineering and R&D with multiple patents in clean-tech. Adept at bridging technology, business, and user experience to deliver measurable results and market leadership."
+          />
+
+          <Experience experiences={experiences} />
+
+          <Education education={education} />
+
+          <Certifications certifications={certifications} />
+
+          <Patents patents={patents} />
+
+          <Skills skillCategories={skillCategories} />
+
+          <TechStack technologies={technologies} />
+
+          <Projects projects={projects} />
+
+          <Publications publications={publications} />
+
+          <Contact email="navneetanandsah@gmail.com" />
+
+          <footer className="py-8 text-center text-sm text-muted-foreground border-t">
+            <div className="max-w-6xl mx-auto px-6 md:px-8">
+              <p>© {new Date().getFullYear()} Navneet Anand Sah. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
   );
 }
