@@ -1,5 +1,5 @@
 import Hero from '../Hero';
-import profileImage from '@assets/generated_images/Professional_headshot_for_portfolio_81bc0d41.png';
+import profileImage from '@assets/Generated Image October 08, 2025 - 9_55PM_1759942363162.png';
 
 export default function HeroExample() {
   return (
