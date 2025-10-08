@@ -20,7 +20,7 @@ A professional portfolio website showcasing product leadership experience, paten
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [https://nvanandsah.github.io/portfolio](https://nvanandsah.github.io/portfolio)
+Visit the live portfolio: [Your GitHub Pages URL will be here after deployment]
 
 ## 🛠️ Tech Stack
 
@@ -55,34 +55,57 @@ npm run dev
 
 4. Open [http://localhost:5000](http://localhost:5000) in your browser
 
-## 🏗️ Build for Production
+## 🏗️ Build Static Site for GitHub Pages
 
 Generate static files for deployment:
 
 ```bash
-npm run build
+./build-static.sh
+```
+
+Or manually:
+
+```bash
+vite build --config vite.config.static.ts
+cp public/.nojekyll dist/
 ```
 
 The static files will be generated in the `dist` directory.
 
 ## 🚀 Deploy to GitHub Pages
 
-### Automatic Deployment
+### Method 1: Automatic Deployment with GitHub Actions (Recommended)
 
-1. Push your code to GitHub:
+1. Enable GitHub Pages in your repository:
+   - Go to Settings → Pages
+   - Source: "GitHub Actions"
+
+2. Push your code to GitHub:
 ```bash
 git add .
-git commit -m "Update portfolio"
+git commit -m "Add portfolio website"
 git push origin main
 ```
 
-2. The GitHub Actions workflow will automatically build and deploy to GitHub Pages
+3. The GitHub Actions workflow will automatically build and deploy
 
-### Manual Deployment
+### Method 2: Manual Deployment
+
+1. Build the static site:
+```bash
+./build-static.sh
+```
+
+2. Deploy the `dist` folder to GitHub Pages:
+   - Option A: Use `gh-pages` branch
+   - Option B: Push `dist` contents to a separate branch and configure in repository settings
+
+### Preview Build Locally
+
+After building, preview the static site:
 
 ```bash
-npm run build
-npm run deploy
+npx vite preview --config vite.config.static.ts
 ```
 
 ## 📁 Project Structure
