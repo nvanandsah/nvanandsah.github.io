@@ -41,10 +41,9 @@ Lead Product Manager (Dec 2022 – Dec 2023)
 • Defined product KPIs, metrics tracking, and roadmap aligned to global expansion goals
 
 The Solar Labs
-Senior Product Manager (Jan 2022 – Nov 2022)
-Head of Engineering (2021 – Dec 2021)
-Senior Software Engineer (Jan 2021 – Jun 2021)
-Software Engineer (Jun 2020 – Dec 2020)
+Head of Engineering & Product (Jan 2022 – Nov 2022)
+Senior Software Engineer (July 2021 – Dec 2021)
+Software Engineer (Dec 2020 – Jun 2021)
 • Transitioned from engineering to product leadership within 18 months
 • Developed and executed product roadmap, incorporating data-driven insights and user feedback loops
 • Implemented architecture refactor (microservices, GPU computing) to increase system performance 3×

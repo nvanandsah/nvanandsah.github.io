@@ -31,10 +31,9 @@ export default function Home() {
     {
       company: "The Solar Labs",
       positions: [
-        { title: "Senior Product Manager", period: "Jan 2022 – Nov 2022" },
-        { title: "Head of Engineering", period: "2021 – Dec 2021" },
-        { title: "Senior Software Engineer", period: "Jan 2021 – Jun 2021" },
-        { title: "Software Engineer", period: "Jun 2020 – Dec 2020" }
+        { title: "Head of Engineering & Product", period: "Jan 2022 – Nov 2022" },
+        { title: "Senior Software Engineer", period: "July 2021 – Dec 2021" },
+        { title: "Software Engineer", period: "Dec 2020 – Jun 2021" }
       ],
       achievements: [
         "Transitioned from engineering to product leadership within 18 months, leading the full lifecycle of a solar SaaS design platform.",
